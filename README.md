@@ -1,4 +1,4 @@
-[<img src="https://raw.github.com/davidayalas/openelec-raspberry-pi/master/img/xbmc.jpg">](https://raw.github.com/davidayalas/openelec-raspberry-pi/master/img/xbmc.jpg)
+[<img src="https://raw.github.com/davidayalas/openelec-raspberry-pi/master/img/xbmc.jpg">](https://raw.github.com/davidayalas/openelec-raspberry-pi/master/img/xbmc.jpg) [<img src="https://raw.github.com/davidayalas/openelec-raspberry-pi/master/img/raspi.jpg">](https://raw.github.com/davidayalas/openelec-raspberry-pi/master/img/raspi.jpg)
 
 Instal·lar la Raspberry PI com a centre multimèdia
 ===================================================
