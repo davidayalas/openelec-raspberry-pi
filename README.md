@@ -81,3 +81,24 @@ Anar a la pantalla de Sistema > Ajustos > Complements > Obtenir més complements
 * A Xbmc.org addons anar a "Addons d'aplicacions" i instal·lar "Transmission"
 
 Es pot habilitar l'accés per HTTP de manera que es puguin desar els torrents sense haver d'entrar a la consola de la Raspi o bé es poden buscar torrents directament amb la interfície de programa que té el propi addon. Podem posar el Transmission a la pantalla principal de la mateixa manera que hem posat els plugins de vídeo. Anem a "Skin" > "Configuració" > "Pantalla principal" > Addons d'inici i posem el transmission com a addon a mostrar a la pantalla d'inici de "Programes"
+
+Configurar IP fixa
+-------------------
+
+Anar a "Sistema" a la pantalla principal i a l'opció que es desplega a sota, seleccionar Openelec.
+
+A la pantalla que s'obre anar al menú "Xarxa" i anar a l'opció "Adreça ip".
+
+S'ha de posar una ip del teu rang, la màscara de xarxa, el gateway i el dns (normalment aquestes dues últimes opcions seran 192.168.1.1 o 192.168.0.1)
+
+Control de XBMC des del mòbil
+------------------------------
+
+Anar al market del teu terminal i cercar "xbmc remote".
+
+Reproducció de continguts via AirPlay o uPnP (Android)
+-------------------------------------------------------
+
+Amb dispositius iOS ja està integrat en les aplicacions que poden reproduir continguts en altres dispositius.
+
+Per a dispositius Android existeixen diverses aplicacions, per exemple, "iMediaShare"
