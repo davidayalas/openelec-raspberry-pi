@@ -1,0 +1,155 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Openelec-raspberry-pi by davidayalas</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1 class="header">Openelec-raspberry-pi</h1>
+        <p class="header">Instal·lació d'Openelec a la Raspberry PI &amp; +</p>
+
+        <ul>
+          <li class="download"><a class="buttons" href="https://github.com/davidayalas/openelec-raspberry-pi/zipball/master">Download ZIP</a></li>
+          <li class="download"><a class="buttons" href="https://github.com/davidayalas/openelec-raspberry-pi/tarball/master">Download TAR</a></li>
+          <li><a class="buttons github" href="https://github.com/davidayalas/openelec-raspberry-pi">View On GitHub</a></li>
+        </ul>
+
+        <p class="header">This project is maintained by <a class="header name" href="https://github.com/davidayalas">davidayalas</a></p>
+
+
+      </header>
+      <section>
+        <p><a href="https://raw.github.com/davidayalas/openelec-raspberry-pi/master/img/xbmc.jpg"><img src="https://raw.github.com/davidayalas/openelec-raspberry-pi/master/img/xbmc.jpg"></a> <a href="https://raw.github.com/davidayalas/openelec-raspberry-pi/master/img/raspi.jpg"><img src="https://raw.github.com/davidayalas/openelec-raspberry-pi/master/img/raspi.jpg"></a></p>
+
+<h1>Instal·lar la Raspberry PI com a centre multimèdia</h1>
+
+<p>Aquest tutorial explica com convertir la Raspberry PI (Raspi) en un centre multimèdia mitjançant Openelec - XBMC (Open Embedded Linux Entertainment Center amb XBox Media Center). Hi ha altres distribucions de l'XBMC (Raspbmc o XBian). El procés d'instal·lació és diferent, però la configuració i els plugins disponibles són els mateixos.</p>
+
+<h2>Què necessitem?</h2>
+
+<ul>
+<li><p>Tarja SD: amb 2GB n'hi ha prou però amb més grans no hi hauria d'haver problema. Per si de cas, consultar aquest enllaç <a href="elinux.org/RPi_SD_cards">elinux.org/RPi_SD_cards</a></p></li>
+<li>
+<p>Descarregar l'última versió de l'Openelec per a Raspberry PI:</p>
+
+<ul>
+<li>Linux: <a href="http://openelec.tv/get-openelec/download/viewcategory/10-raspberry-pi-builds">http://openelec.tv/get-openelec/download/viewcategory/10-raspberry-pi-builds</a>
+</li>
+<li>Mac: <a href="http://wiki.openelec.tv/index.php?title=Installing_OpenELEC_on_Raspberry_Pi#tab=Mac_OSX">http://wiki.openelec.tv/index.php?title=Installing_OpenELEC_on_Raspberry_Pi#tab=Mac_OSX</a>
+</li>
+<li>Windows: <a href="http://squirrelhosting.co.uk/hosting-blog/hosting-blog-info.php?id=9">http://squirrelhosting.co.uk/hosting-blog/hosting-blog-info.php?id=9</a>
+</li>
+</ul>
+</li>
+<li>
+<p>Descarregar els següents plugins de vídeo en un pendrive:</p>
+
+<ul>
+<li>Pelis a la carta: <a href="http://blog.tvalacarta.info/plugin-xbmc/pelisalacarta/descargar/">http://blog.tvalacarta.info/plugin-xbmc/pelisalacarta/descargar/</a>
+</li>
+<li>TV a la carta: <a href="http://blog.tvalacarta.info/plugin-xbmc/tvalacarta/descargar/">http://blog.tvalacarta.info/plugin-xbmc/tvalacarta/descargar/</a>
+</li>
+<li>Sports Devil: <a href="https://code.google.com/p/xbmc-development-with-passion/wiki/SportsDevil">https://code.google.com/p/xbmc-development-with-passion/wiki/SportsDevil</a>
+</li>
+<li>RtmpGUI+: <a href="http://pluginsxbmc.blogspot.com.es/2013/01/rtmpgui-todo-el-futbol-en-xbmc.html">http://pluginsxbmc.blogspot.com.es/2013/01/rtmpgui-todo-el-futbol-en-xbmc.html</a>
+</li>
+<li>Icefilms (repositori d'icefilms): <a href="https://code.google.com/p/anarchintosh-projects/">https://code.google.com/p/anarchintosh-projects/</a>
+</li>
+</ul>
+</li>
+</ul><h2>Procés d'instal·lació</h2>
+
+<ul>
+<li><p>Seguir el procés d'instal·lació segons la plataforma: <a href="http://wiki.openelec.tv/index.php?title=Installing_OpenELEC_on_Raspberry_Pi">http://wiki.openelec.tv/index.php?title=Installing_OpenELEC_on_Raspberry_Pi</a></p></li>
+<li><p>Un cop instal·lat el sistema, posar la SD a la Raspi i arrencar-la</p></li>
+</ul><h2>Setup inicial</h2>
+
+<ul>
+<li><p>Per a la primera configuració serà necessari disposar d'un teclat connectat a un dels usb de la Raspi o bé una TV que permeti la utilització de la Raspi mitjançant el comandament a distància. O bé connectar per ssh a la raspberry des d'un altre equip i habilitar en els fitxers de configuració el control des d'altres dispositius.</p></li>
+<li>
+<p>Anar a System &gt; Setup. En aquest menú podem configurar totes les opcions d'XBMC:</p>
+
+<ul>
+<li>
+<p>Al menú "Aparença":</p>
+
+<ul>
+<li>Internacional configurem la llengua i la regió horària</li>
+<li>Skin &gt; inhabilitem la opció de RSS (millorarà el rendiment ja que a la pantalla inicial no mostrarà notícies relacionades amb Openelec)</li>
+<li>El temps &gt; posen el "Weather Information" a cap / none (millorarà la càrrega inicial perquè no mostrarà el temps a la pantalla inicial)</li>
+</ul>
+</li>
+<li>
+<p>Al menú "Serveis":</p>
+
+<ul>
+<li>Habilitem "Airplay"</li>
+<li>Habilitem "uPnP": permetrà enviar continguts a reproduir, com en airplay, però amb dispositiu Android, per exemple</li>
+<li>Habilitar el Servidor web &gt; permetre control per http: permetrà a aplicacions natives per Iphone o Android fer de comandament a distància de l'XBMC</li>
+<li>Habilitar el Control Remot per a programes del propi XBMC i altres dispositius</li>
+</ul>
+</li>
+<li>
+<p>Al menú "Complements" / "Add-ons":</p>
+
+<ul>
+<li>Instal·lar des de zip (s'ha d'endollar el pendrive on hem descarregat els plugins de l'inici) &gt; instal·lem un a un tots els plugins.
+El plugin d'Icefilms requereix instal·lar primer el repositori i després des de "Obtenir plugins", repositori "anarchintosh", addons de video, instal·lar icefilms</li>
+</ul>
+</li>
+<li><p>Al menú "Skin" &gt; "Configuració" &gt; "Pantalla principal" &gt; Addons d'inici: es poden configurar els plugins que volem que siguin accessibles des de la pantalla principal. Des d'aquí podem configurar el addon per als subtítols, amb els idiomes preferits i els serveis que volem consultar per cercar subtítols.</p></li>
+</ul>
+</li>
+</ul><h2>Transmission</h2>
+
+<p>Si vols utilitzar la Raspi per descarregar continguts via torrent, pots instal·lar el <a href="http://en.wikipedia.org/wiki/Transmission_(BitTorrent_client)">Transmission</a> com a client de torrent.</p>
+
+<p>Consta de dues parts:</p>
+
+<ul>
+<li>Servei transmission (el dimoni)</li>
+<li>Interfície de transmission</li>
+</ul><p>Anar a la pantalla de Sistema &gt; Ajustos &gt; Complements &gt; Obtenir més complements:</p>
+
+<ul>
+<li><p>A Openelec addons anar a "Serveis" i instal·lar "Transmission": en el servei de transmission es pot configurar la carpeta on s'emmagatzemaran les descàrregues. Es pot seleccionar un disc extern (connectat per usb, per exemple). Reiniciar la Raspi.</p></li>
+<li><p>A Xbmc.org addons anar a "Addons d'aplicacions" i instal·lar "Transmission"</p></li>
+</ul><p>Es pot habilitar l'accés per HTTP de manera que es puguin desar els torrents sense haver d'entrar a la consola de la Raspi o bé es poden buscar torrents directament amb la interfície de programa que té el propi addon. Podem posar el Transmission a la pantalla principal de la mateixa manera que hem posat els plugins de vídeo. Anem a "Skin" &gt; "Configuració" &gt; "Pantalla principal" &gt; Addons d'inici i posem el transmission com a addon a mostrar a la pantalla d'inici de "Programes"</p>
+
+<h2>Configurar IP fixa</h2>
+
+<p>Anar a "Sistema" a la pantalla principal i a l'opció que es desplega a sota, seleccionar Openelec.</p>
+
+<p>A la pantalla que s'obre anar al menú "Xarxa" i anar a l'opció "Adreça ip".</p>
+
+<p>S'ha de posar una ip del teu rang, la màscara de xarxa, el gateway i el dns (normalment aquestes dues últimes opcions seran 192.168.1.1 o 192.168.0.1)</p>
+
+<h2>Control de XBMC des del mòbil</h2>
+
+<p>Anar al market del teu terminal i cercar "xbmc remote".</p>
+
+<h2>Reproducció de continguts via AirPlay o uPnP (Android)</h2>
+
+<p>Amb dispositius iOS ja està integrat en les aplicacions que poden reproduir continguts en altres dispositius.</p>
+
+<p>Per a dispositius Android existeixen diverses aplicacions, per exemple, "iMediaShare"</p>
+      </section>
+      <footer>
+        <p><small>Hosted on <a href="https://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+		
+  </body>
+</html>
