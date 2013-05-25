@@ -35,7 +35,7 @@ Procés d'instal·lació
 Setup inicial
 --------------
 
-* Per a la primera configuració serà necessari disposar d'un teclat connectat a un dels usb de la Raspi o bé una TV que permeti la utilització de la Raspi mitjançant el comandament a distància. O bé connectar per ssh a la raspberry des d'un altre equip i habilitar en els fitxers de configuració el control des d'altres dispositius.
+* Per a la primera configuració serà necessari disposar d'un teclat connectat a un dels usb de la Raspi o bé una TV que permeti la utilització de la Raspi mitjançant el comandament a distància (la TV ha d'implementar l'estàndard [CEC](http://wiki.xbmc.org/index.php?title=CEC)). O bé connectar per ssh a la raspberry des d'un altre equip i habilitar en els fitxers de configuració el control des d'altres dispositius.
 
 * Anar a System > Setup. En aquest menú podem configurar totes les opcions d'XBMC:
 	
@@ -102,7 +102,8 @@ La raspberry és compatible amb dispositius WIFI usb. Per configurar l'accés s'
 Control de XBMC des del mòbil
 ------------------------------
 
-Anar al market del teu terminal i cercar "xbmc remote".
+Anar al market del teu terminal i cercar "xbmc remote". Segons el sistema operatiu, el control remot incorporarà una opció per autodescobriment a la xarxa de sistemes XBMC (el telèfon ha d'estar connectat mitjançant WIFI a la mateixa xarxa). En cas que no sigui així i no puguis obtenir la ip de l'XBMC, hauràs d'entrar al router i mirar els dispositius connectats en aquell moment per obtenir-la.
+
 
 Reproducció de continguts via AirPlay o uPnP (Android, altres)
 -------------------------------------------------------
