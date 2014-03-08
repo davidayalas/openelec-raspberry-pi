@@ -8,7 +8,7 @@ Aquest tutorial explica com convertir la Raspberry PI (Raspi) en un centre multi
 Què necessitem?
 ---------------
 
-* Tarja SD: amb 2GB n'hi ha prou però amb més grans no hi hauria d'haver problema. Per si de cas, consultar aquest enllaç [elinux.org/RPi_SD_cards](elinux.org/RPi_SD_cards)
+* Tarja SD: amb 2GB n'hi ha prou però amb més grans no hi hauria d'haver problema. Per si de cas, consultar aquest enllaç [elinux.org/RPi_SD_cards](http://elinux.org/RPi_SD_cards)
 
 * Descarregar l'última versió de l'Openelec per a Raspberry PI:
 
@@ -23,7 +23,6 @@ Què necessitem?
 	* Sports Devil: https://code.google.com/p/xbmc-development-with-passion/wiki/SportsDevil
 	* RtmpGUI+: http://pluginsxbmc.blogspot.com.es/2013/01/rtmpgui-todo-el-futbol-en-xbmc.html
 	* Icefilms (repositori d'icefilms): https://code.google.com/p/anarchintosh-projects/
-
 
 Procés d'instal·lació
 ----------------------
@@ -80,6 +79,8 @@ Consta de dues parts:
 Anar a la pantalla de Sistema > Configuració > Complements > Obtenir més complements:
 
 * A Openelec addons anar a "Serveis" i instal·lar "Transmission": en el servei de transmission es pot configurar la carpeta on s'emmagatzemaran les descàrregues. Es pot seleccionar un disc extern (connectat per usb, per exemple). Reiniciar la Raspi.
+
+* A les noves versions d'openelec, Transmission no és un addon oficial. S'ha de descarregar de [http://unofficial.addon.pro/](http://unofficial.addon.pro/) i instal·lar com a fitxer -zip.
 
 * A Xbmc.org addons anar a "Addons d'aplicacions" i instal·lar "Transmission"
 
