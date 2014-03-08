@@ -22,6 +22,7 @@ Què necessitem?
 	* TV a la carta: http://blog.tvalacarta.info/plugin-xbmc/tvalacarta/descargar/
 	* Sports Devil: https://code.google.com/p/xbmc-development-with-passion/wiki/SportsDevil
 	* RtmpGUI+: http://pluginsxbmc.blogspot.com.es/2013/01/rtmpgui-todo-el-futbol-en-xbmc.html
+	* Livestreams: http://www.mediafire.com/download/3x12dqqs2wl2i52/MOD+plugin.video.live.streams.zip
 	* Icefilms (repositori d'icefilms): https://code.google.com/p/anarchintosh-projects/
 
 Procés d'instal·lació
