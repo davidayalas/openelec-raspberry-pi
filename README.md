@@ -16,14 +16,11 @@ Què necessitem?
 	* Mac: http://wiki.openelec.tv/index.php?title=Installing_OpenELEC_on_Raspberry_Pi#tab=Mac_OSX
 	* Windows: http://squirrelhosting.co.uk/hosting-blog/hosting-blog-info.php?id=9 <br>
 
-* Descarregar els següents plugins de vídeo en un pendrive:
+* [Opcional] Alguns plugins de vídeo que es poden instal·lar:
 
 	* Pelis a la carta: http://blog.tvalacarta.info/plugin-xbmc/pelisalacarta/descargar/
 	* TV a la carta: http://blog.tvalacarta.info/plugin-xbmc/tvalacarta/descargar/
-	* Sports Devil: https://code.google.com/p/xbmc-development-with-passion/wiki/SportsDevil
-	* RtmpGUI+: http://pluginsxbmc.blogspot.com.es/2013/01/rtmpgui-todo-el-futbol-en-xbmc.html
-	* Livestreams: http://www.mediafire.com/download/3x12dqqs2wl2i52/MOD+plugin.video.live.streams.zip
-	* Icefilms (repositori d'icefilms): https://code.google.com/p/anarchintosh-projects/
+	* PalcoTV: http://palcotv.blogspot.com.es/
 
 Procés d'instal·lació
 ----------------------
@@ -79,13 +76,13 @@ Consta de dues parts:
 
 Anar a la pantalla de Sistema > Configuració > Complements > Obtenir més complements:
 
-* A Openelec addons anar a "Serveis" i instal·lar "Transmission": en el servei de transmission es pot configurar la carpeta on s'emmagatzemaran les descàrregues. Es pot seleccionar un disc extern (connectat per usb, per exemple). Reiniciar la Raspi.
+* A les últimes versions, el servei (dimoni) no està disponible directament als addons per defecte. Cal habilitar el repositori no oficial d'openelec primer. Anar a Addons > Openelec Official > Repositoris > Unofficial repository. Després d'instal·lar-lo cal forçar un refresc (addons > openelec unofficial > force refresh). 
 
-* A les noves versions d'openelec, Transmission no és un addon oficial. S'ha de descarregar de [http://unofficial.addon.pro/](http://unofficial.addon.pro/) i instal·lar com a fitxer -zip.
+* A addons anar a "Serveis" i instal·lar "Transmission": en el servei de transmission es pot configurar la carpeta on s'emmagatzemaran les descàrregues. Es pot seleccionar un disc extern (connectat per usb, per exemple). Reiniciar la Raspi.
 
 * A Xbmc.org addons anar a "Addons d'aplicacions" i instal·lar "Transmission"
 
-Es pot habilitar l'accés per HTTP de manera que es puguin desar els torrents sense haver d'entrar a la consola de la Raspi o bé es poden buscar torrents directament amb la interfície de programa que té el propi addon. Podem posar el Transmission a la pantalla principal de la mateixa manera que hem posat els plugins de vídeo. Anem a "Skin" > "Configuració" > "Pantalla principal" > Addons d'inici i posem el transmission com a addon a mostrar a la pantalla d'inici de "Programes"
+Es pot habilitar l'accés per HTTP de manera que es puguin desar els torrents sense haver d'entrar a la consola de la Raspi o bé es poden buscar torrents directament amb la interfície de programa que té el propi addon. Podem posar el Transmission a la pantalla principal de la mateixa manera que hem posat els plugins de vídeo. Anem a "Skin" > "Configuració" > "Pantalla principal" > Addons d'inici i posem el transmission com a addon a mostrar a la pantalla d'inici de "Programes".
 
 Configurar IP fixa
 -------------------
